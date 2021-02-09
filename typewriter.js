@@ -1,17 +1,16 @@
-const sentence = "This is a string exmaple and the console log will always come after";
+const sentence =
+  "This is a string example and the console log will always come after";
 
-const type = async (char) => {
+const type = function(char) {
   setTimeout(() => {
-    process.stdout.write(char)
+    process.stdout.write(char);
   }, 50);
-}
+};
 
-for (char of sentence)
-{
+for (let char of sentence) {
   type(char);
 }
 
 setTimeout(() => {
-  console.log()
+  console.log();
 }, sentence.length * 50);
-
